@@ -1,0 +1,7 @@
+*.pdf
+*.pyg
+*.synctex.gz
+*.out
+*.log
+*.aux
+*testing*
