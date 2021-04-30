@@ -5,3 +5,5 @@
 *.log
 *.aux
 *testing*
+*.fdb_latexmk
+*.fls
