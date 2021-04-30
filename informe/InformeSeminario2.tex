@@ -20,11 +20,12 @@
 	\author{Daniel de la Cruz Prieto} 
 	\maketitle
 	
-		\section*{Ejercicio 3}
+	\section*{Ejercicio 3 Clase Pr\'actica 5 }
+	
 		
 		\begin{table}[ht]		
 			\centering
-			\begin{tabular}{|c|c|c|c|}
+			\begin{tabular}{|c|c|c|>{\columncolor[gray]{0.9}}c|}
 				\hline 
 				& Femenino & Masculino & $n_{i}*$ \\
 				\hline
@@ -34,7 +35,7 @@
 				\hline
 				Malo (M) & 7 & 8 & 15 \\
 				\hline
-				$n_{i}*$ & 20 & 20 & 40 \\
+				\rowcolor[gray]{0.9} $n_{i}*$ & 20 & 20 & 40 \\
 				\hline
 			\end{tabular}
 		\end{table}
@@ -45,9 +46,11 @@
 		\begin{flushleft}
 			Tomamos $ \alpha = 0.05$.
 		\end{flushleft}
+		
 		\begin{flushleft}
 			Estadigrafo :
 		\end{flushleft}
+		
 		$$ x^2 = \sum_{i=1}^{y}\sum_{j=1}^{c}\frac{\left(n_{ij} - \frac{n_{i*}n_{*j}}{n}\right)^2}{\frac{n_{i*}n_{*j}}{n}}$$
 		\begin{flushleft}
 			$n_{ij} =$ frecuencia observada en la casilla i,j.
@@ -55,24 +58,44 @@
 		\begin{flushleft}
 			$e_{ij} = \frac{n_{i*}n_{*j}}{n} =$ frecuencia esperada en la casilla ij.
 		\end{flushleft}
-		$$x^2 = \frac{\left(6 - \frac{12 * 20}{40}\right)^2}{\frac{12 * 20}{40}} + \frac{\left(6 - \frac{12 * 20}{40}\right)^2}{\frac{12 * 20}{40}}$$
-		$$x^2 = \frac{\left(6 - \frac{13 * 20}{40}\right)^2}{\frac{13 * 20}{40}} + \frac{\left(6 - \frac{13 * 20}{40}\right)^2}{\frac{13 * 20}{40}}$$
-		$$x^2 = \frac{\left(6 - \frac{15 * 20}{40}\right)^2}{\frac{15 * 20}{40}} + \frac{\left(6 - \frac{15 * 20}{40}\right)^2}{\frac{15 * 20}{40}}$$
-		$$x^2 = 2\left[\frac{\left(-0.5\right)^2}{6.5}\right] + 2\left[\frac{\left(-1.5\right)^2}{7.5}\right]$$
-		$$x^2 = 2\left[\frac{0.25}{6.5}\right] + 2\left[\frac{2.25}{7.5}\right]$$
-		$$x^2 = 2\left(0.038\right) + 2\left(0.3\right)$$
-		$$x^2 = 0.076 + 0.6$$
-		$$x^2 = 0.676$$
+		
+		\begin{equation*}
+			\begin{array}{rcl}
+			x^2 & = & \displaystyle \frac{\left(6 - \frac{12 * 20}{40}\right)^2}{\displaystyle \frac{12 * 20}{40}} + \displaystyle \frac{\left(6 - \frac{12 * 20}{40}\right)^2}{\displaystyle \frac{12 * 20}{40}}
+			\\
+			\\
+			x^2 & = &\displaystyle \frac{\left(6 - \displaystyle \frac{13 * 20}{40}\right)^2}{\displaystyle \frac{13 * 20}{40}} + \displaystyle \frac{\left(6 -  \displaystyle \frac{13 * 20}{40}\right)^2}{\displaystyle \frac{13 * 20}{40}}
+			\\
+			\\
+			x^2 & =& \displaystyle \frac{ \displaystyle \left(6 - \frac{15 * 20}{40}\right)^2}{ \displaystyle \frac{15 \cdot 20}{40}} + \displaystyle \frac{ \displaystyle \left(6 - \frac{15 * 20}{40}\right)^2}{\displaystyle \frac{15 * 20}{40}}
+			\\
+			\\
+			x^2 & = & 2\left[\frac{\left(-0.5\right)^2}{6.5}\right] + 2\left[\frac{\left(-1.5\right)^2}{7.5}\right]
+			\\
+			\\
+			x^2 & = & 2\left[\frac{0.25}{6.5}\right] + 2\left[\frac{2.25}{7.5}\right]
+			\\
+			\\
+			x^2 & = & 2\left(0.038\right) + 2\left(0.3\right)
+			\\
+			\\
+			x^2 & = & 0.076 + 0.6
+			\\
+			\\
+			 x^2 & = & 0.676
+			\end{array}
+		\end{equation*}
 		
 		\begin{flushleft}
-			Regi\'on Cr\'itica:
+			\textbf{Regi\'on Cr\'itica:}
 		\end{flushleft}
+		
 		\begin{equation*}    
-		\begin{array}{lcl}
-		X^2 & > & X_{1}^{2} - a \left(\left(y-1\right)*\left(c-1\right)\right)\\
-		X^2 & > & X_{1}^{2} - 0.05 \left(\left(3-1\right)*\left(2-1\right)\right)\\
-		X^2 & > & X^{2} - 0.95 \left(\left(2\right)*\left(1\right)\right)\\
-		X^2 & > & X^{2} - 0.95 \left(2\right) = 5.99\\
+		\begin{array}{rcl}
+		X^2 & > & X_{1}^{2} - a \left(\left(r-1\right)\cdot \left(c-1\right)\right)\\\\
+		 & > & X_{1}^{2} - 0.05 \left(\left(3-1\right)\cdot \left(2-1\right)\right)\\\\
+		 & > & X^{2} - 0.95 \left(\left(2\right)\cdot \left(1\right)\right)\\\\
+		0.676 = X^2 & > & X^{2} - 0.95 \left(2\right) = 5.99\\
 		\end{array}
 		\end{equation*}
 		
@@ -138,8 +161,41 @@
 			\hline
 		\end{tabular}
 	\end{table}
+	
+	
+	\begin{equation*}
+		SS
+	\end{equation*}
 
+	\section*{Ejercicio 4 Clase Pr\'actica 5}
+		\begin{flushleft}
+			Para este ejercicio vamos a utilizar la correlaci\'on de $Pearson$ por ser esta una medida de la relaci\'on lineal entre dos variables aleatorias cuantitativas. Adem\'as que es independiente de la escala de la medida de las variables.
+		\end{flushleft}
 
+		\begin{table}[ht]
+		\centering
+		\begin{tabular}{|c|c|c|c|c|}
+			\hline
+			x & y & $x\cdot y$ & $x^2$ & $y^2$ \\
+			\hline
+			10 & 12 & 120 & 10 & 144 \\
+			\hline
+			6 & 10 & 60 & 36 & 100 \\
+			\hline
+			5 & 15 & 75 & 25 & 225 \\
+			\hline
+			4 & 10 & 40 & 16 & 144 \\
+			\hline
+			3 & 13 & 39 & 9 & 144 \\
+			\hline
+			2 & 9 & 18 & 4 & 144 \\
+			\hline
+			5 & 15 & 15 & 25 & 144 \\
+			\hline
+			35 & 84 & 427 & 215 & 1044 \\
+			\hline
+		\end{tabular}
+	    \end{table}
 	
 	\section*{Ejercicio 6 Clase Pr\'actica 6 }
 
