@@ -25,4 +25,8 @@ tablaexport <- data.frame(x1,y1,xy1,xx1,yy1)
 
 library(xtable)
 
-print(xtable(tabla), include.rownames = c('x','y','xy' ,'x^2','y^2'))
+
+print(xtable(tabla), include.rownames = FALSE)
+
+
+%c('x','y','xy' ,'x^2','y^2')
