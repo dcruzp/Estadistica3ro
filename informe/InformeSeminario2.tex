@@ -76,6 +76,67 @@
 			\hline
 		\end{tabular}
 	\end{table}
+
+	\section*{Ejercicio 3}
+		\begin{table}
+		\caption{Variables}
+		\centering
+		\begin{tabular}{|c|c|c|c|}
+			\hline 
+			& Femenino & Masculino & $n_{i}*$ \\
+			\hline
+			Bueno(B) & 6 & 6 & 12 \\
+			\hline
+			Acecptable (A) & 7 & 6 & 13 \\
+			\hline
+			Malo (M) & 7 & 8 & 15 \\
+			\hline
+			$n_{i}*$ & 20 & 20 & 40 \\
+			\hline
+		\end{tabular}
+		\end{table}
+
+		\begin{flushleft}
+			b-) Decir si existe relaci\'on entre esas variables con un nivel de significa\'on del $5\%$.
+		\end{flushleft}
+		\begin{flushleft}
+			Datos $\Rightarrow a = 0.05$.
+		\end{flushleft}
+		\begin{flushleft}
+			Estadigrafo :
+		\end{flushleft}
+		$$ x^2 = \sum_{i=1}^{y}\sum_{j=1}^{c}\frac{\left(n_{ij} - \frac{n_{i*}n_{j}}{n}\right)^2}{\frac{n_{i*}n_{*j}}{n}}$$
+		\begin{flushleft}
+			$n_{ij} =$ frecuencia observada en la casilla ij.
+		\end{flushleft}
+		\begin{flushleft}
+			$e_{ij} = \frac{n_{i*}n_{*J}}{n} =$ frecuencia esperada en la casilla ij.
+		\end{flushleft}
+		$$x^2 = \frac{\left(6 - \frac{12 * 20}{40}\right)^2}{\frac{12 * 20}{40}} + \frac{\left(6 - \frac{12 * 20}{40}\right)^2}{\frac{12 * 20}{40}}$$
+		$$x^2 = \frac{\left(6 - \frac{13 * 20}{40}\right)^2}{\frac{13 * 20}{40}} + \frac{\left(6 - \frac{13 * 20}{40}\right)^2}{\frac{13 * 20}{40}}$$
+		$$x^2 = \frac{\left(6 - \frac{15 * 20}{40}\right)^2}{\frac{15 * 20}{40}} + \frac{\left(6 - \frac{15 * 20}{40}\right)^2}{\frac{15 * 20}{40}}$$
+		$$x^2 = 2\left[\frac{\left(-0.5\right)^2}{6.5}\right] + 2\left[\frac{\left(-1.5\right)^2}{7.5}\right]$$
+		$$x^2 = 2\left[\frac{0.25}{6.5}\right] + 2\left[\frac{2.25}{7.5}\right]$$
+		$$x^2 = 2\left(0.038\right) + 2\left(0.3\right)$$
+		$$x^2 = 0.076 + 0.6$$
+		$$x^2 = 0.676$$
+
+		\begin{flushleft}
+			Regi\'on Cr\'itica:
+		\end{flushleft}
+		\begin{equation*}    
+		\begin{array}{lcl}
+			X^2 & > & X_{1}^{2} - a \left(\left(y-1\right)*\left(c-1\right)\right)\\
+			X^2 & > & X_{1}^{2} - 0.05 \left(\left(3-1\right)*\left(2-1\right)\right)\\
+			X^2 & > & X^{2} - 0.95 \left(\left(2\right)*\left(1\right)\right)\\
+			X^2 & > & X^{2} - 0.95 \left(2\right) = 5.99\\
+		\end{array}
+		\end{equation*}
+
+		\begin{flushleft}
+			Como la regi\'on cr\'itica no se cumple eso quiere decir que no rechaz\'o $H_{0}$ por lo que hay independencia entre las variables.
+		\end{flushleft}
+		\end{document}
 	
 	\section*{Ejercicio 6 Clase Pr\'actica 6 }
 
