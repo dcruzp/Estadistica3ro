@@ -64,16 +64,16 @@
 			x^2 & = & \displaystyle \frac{\left(6 - \frac{12 * 20}{40}\right)^2}{\displaystyle \frac{12 * 20}{40}} + \displaystyle \frac{\left(6 - \frac{12 * 20}{40}\right)^2}{\displaystyle \frac{12 * 20}{40}}
 			\\
 			\\
-			x^2 & = &\displaystyle \frac{\left(6 - \displaystyle \frac{13 * 20}{40}\right)^2}{\displaystyle \frac{13 * 20}{40}} + \displaystyle \frac{\left(6 -  \displaystyle \frac{13 * 20}{40}\right)^2}{\displaystyle \frac{13 * 20}{40}}
+			&  & + \displaystyle \frac{\left(6 - \displaystyle \frac{13 * 20}{40}\right)^2}{\displaystyle \frac{13 * 20}{40}} + \displaystyle \frac{\left(6 -  \displaystyle \frac{13 * 20}{40}\right)^2}{\displaystyle \frac{13 * 20}{40}}
 			\\
 			\\
-			x^2 & =& \displaystyle \frac{ \displaystyle \left(6 - \frac{15 * 20}{40}\right)^2}{ \displaystyle \frac{15 \cdot 20}{40}} + \displaystyle \frac{ \displaystyle \left(6 - \frac{15 * 20}{40}\right)^2}{\displaystyle \frac{15 * 20}{40}}
+			& & + \displaystyle \frac{ \displaystyle \left(6 - \frac{15 * 20}{40}\right)^2}{ \displaystyle \frac{15 \cdot 20}{40}} + \displaystyle \frac{ \displaystyle \left(6 - \frac{15 * 20}{40}\right)^2}{\displaystyle \frac{15 * 20}{40}}
 			\\
 			\\
 			x^2 & = & 2\left[\frac{\left(-0.5\right)^2}{6.5}\right] + 2\left[\frac{\left(-1.5\right)^2}{7.5}\right]
 			\\
 			\\
-			x^2 & = & 2\left[\frac{0.25}{6.5}\right] + 2\left[\frac{2.25}{7.5}\right]
+			 & & + 2\left[\frac{0.25}{6.5}\right] + 2\left[\frac{2.25}{7.5}\right]
 			\\
 			\\
 			x^2 & = & 2\left(0.038\right) + 2\left(0.3\right)
@@ -196,57 +196,139 @@
 			\hline
 		\end{tabular}
 		\end{table}
-		
-		$$r = \frac{n\sum_{i=1}^{n}\left(x_{i}y_{i}\right)-\left(\sum_{i=1}^{n}x_{i}\right)*\left(\sum_{i=1}^{n}y_{i}\right)}{\sqrt{\left(n\sum_{i=1}^{n}x_{i}^{2} - \left(\sum_{i=1}^{n}x_{i}\right)^2\right)\left(n\sum_{i=1}^{n}y_{i}^{2} - \left(\sum_{i=1}^{n}y_{i}\right)^2\right)}}$$
-		$$r = \frac{7*\left(427\right)-\left(35\right)\left(84\right)}{\sqrt{\left(7*\left(215\right)-\left(35\right)^2\right)\left(7\left(1044\right)-\left(84\right)^2\right)}}$$
-		$$r = \frac{2989 - 2940}{\sqrt{\left(1505 - 1225\right)\left(7308 - 7056\right)}}$$
-		$$r = \frac{49}{\sqrt{\left(280\right)\left(255\right)}}$$
-		$$r = \frac{49}{\sqrt{70560}}$$
-		$$r = \frac{49}{265.63}$$
-		$$r = 0.18$$
 
+		\begin{equation*}
+		\begin{array}{rcl}
+			r & = & \displaystyle \frac{n\sum_{i=1}^{n}\left(x_{i}y_{i}\right)-\left(\sum_{i=1}^{n}x_{i}\right)*\left(\sum_{i=1}^{n}y_{i}\right)}{\sqrt{\left(n\sum_{i=1}^{n}x_{i}^{2} - \left(\sum_{i=1}^{n}x_{i}\right)^2\right)\left(n\sum_{i=1}^{n}y_{i}^{2} - \left(\sum_{i=1}^{n}y_{i}\right)^2\right)}}\\\\
+			r & = & \displaystyle \frac{7*\left(427\right)-\left(35\right)\left(84\right)}{\sqrt{\left(7*\left(215\right)-\left(35\right)^2\right)\left(7\left(1044\right)-\left(84\right)^2\right)}}\\\\
+			r & = & \displaystyle \frac{2989 - 2940}{\sqrt{\left(1505 - 1225\right)\left(7308 - 7056\right)}}\\\\
+			r & = & 0.18
+		\end{array}
+		\end{equation*}	
+		
 		\begin{flushleft}
 			Como $r = 0.18$ entonces $-0.4 < r < 0.4$ y podemos decir que no existe correlaci\'on entre las variables, es decir no existe relaci\'on entre los resultados obtenidos en los recorridos de los algoritmos.
 		\end{flushleft}
 	
 	\section*{Ejercicio 6 Clase Pr\'actica 6 }
 
-		\begin{flushleft}
-			a-)Contruya el diagrama de dispersi\'on .Parece ser lineal la relaci\'on?. Explique.
-		\end{flushleft}
+		\subsection*{Contruya el diagrama de dispersi\'on .Parece ser lineal la relaci\'on?. Explique.}
+			
+			
+		\begin{figure}[H]
+			\centering
+			\includegraphics[width=0.9\textwidth]{img/DiagramadeDispersion.png}
+			\caption{Diagrama de Dispersi\'on}
+			\label{fig:ejemplo}
+		\end{figure}
+			
 
-		\begin{flushleft}
-			b-)El diagrama de dispersi\'on sugiere que los equipo ganan m\'as juegos cuando su ERA es m\'as bajo pues a medida que aumenta el averaje los puntos tienden a estar m\'as cerca del eje de los(ERA)(en el gr\'afico es a las absisas).
-		\end{flushleft}
 
-		\begin{flushleft}
-			c-)Encontrar la ecuaci\'on de la recta de mejor ajuste $x = ERA$ y $y = Juegos Ganados$.
-		\end{flushleft}
 
+		\subsection*{El diagrama de dispersión sugiere que los equipos ganan más juegos cuando su ERA es más bajo? Explique.}
+			
+		\begin{flushleft}
+		El diagrama de dispersi\'on sugiere que los equipo ganan m\'as juegos cuando su ERA es m\'as bajo pues a medida que aumenta el averaje los puntos tienden a estar m\'as cerca del eje de los(ERA)(en el gr\'afico es a las absisas).
+		\end{flushleft}
+	
+	
+
+		\subsection*{Encontrar la ecuaci\'on de la recta de mejor ajuste $x = ERA$ y $y = Juegos Ganados$.}
+		
 		\begin{flushleft}
 			Ecuaci\'on de la recta :
 		\end{flushleft}
-		$$ \hat y = B_{0} + B_{1}x$$
-		$$ \hat y = 158.923 - 17.336 x$$
+			
+		\begin{equation*}
+			\begin{array}{rcl}
+			\hat y & = & B_{0} + B_{1}x\\\\
+			\hat y & = & 158.923 - 17.336 x
+			\end{array}
+		\end{equation*}
+		
+		    
+		\subsection*{Trace la recta en el diagrama de dispersi\'on }
+	
+		\begin{figure}[H]
+			\centering
+			\includegraphics[width=0.9\textwidth]{img/DiagramadeDispersionConRectadeMinimoCuadrado.png}
+			\caption{Diagrama de Dispersi\'on con la Recta de Mejor Aproximaci\'on}
+		\end{figure}
+		
+			
+		
+
+		\subsection*{En promedio como se ve afectado el n\'umero de juegos ganados por un aumento unitario en el ERA.Explique como de termin\'o este n\'umero}
 
 		\begin{flushleft}
-			e-)En promedio como se ve afectado el n\'umero de juegos ganados por un aumento unitario en el ERA.Explique como de termino este n\'umero 
+			Como $\hat B_{1}$ representa el cambio pronosticado en la cantidad de juegos ganados por el aumento o disminuci\'on unitaria en el RAE. Entonces el n\'umero de juegos ganados $x$ se ve afentado en $-17.336 x$. Este n\'umero es la pendiente de la recta de mejor ajuste.
 		\end{flushleft}
 
-		\begin{flushleft}
-			Como $\hat B_{1}$ representa el cambio pronosticado en la cantidad de juegos ganados por el aumento o disminuci\'on unitaria en el RAE.
-		\end{flushleft}
+		\subsection*{Seg\'un sus concluciones. \textquestiondown Parece apoyar la idea de que los equipos con mejores porcentajes de ERA tendr\'an m\'as juegos ganados?. Justifique su respuesta. }
 
 		\begin{flushleft}
-			Entonces el n\'umero de juegos ganados $x$ se ve afentado en $-17.336 x$. Este n\'umero es la pendiente de la recta de mejor ajuste.
-		\end{flushleft}
-
-		\begin{flushleft}
-			f-)Seg\'un sus concluciones. \textquestiondown Parece apoyar la idea de que los equipos con mejores porcentajes de ERA tendr\'an m\'as juegos ganados?. Justifique su respuesta. 
-		\end{flushleft}
-
-		\begin{flushleft}
-			-No, los equipos con mejores porcentajes de ERA tendr\'an menos juegos ganados seg\'un el diagrama de dispersi\'on. Pues la ecuaci\'on de la recta de menor ajuste tiene pendiente negativo.
+			No, los equipos con mejores porcentajes de ERA tendr\'an menos juegos ganados seg\'un el diagrama de dispersi\'on. Pues la ecuaci\'on de la recta de menor ajuste tiene pendiente negativo.
 		\end{flushleft}
 		
+		
+		\section*{Ejercicio 1 Clase Pr\'actica 8}
+		
+		\begin{flushleft}
+			Diagrama de Cajas
+		\end{flushleft}
+		
+		\begin{figure}[H]
+			\centering
+			\includegraphics[width=0.9\textwidth]{img/ej1cp8-diagramadecajas.png}
+			\caption{Diagrama de Cajas o Bigotes}
+			\label{fig:ejemplo}
+		\end{figure}
+		
+		
+		\begin{flushleft}
+			El diagrama de caja y bigote representa las tres marcas de spray donde se puede observar la media de
+			efectividad de cada una, la que esta mas a la izquierda  la marca 1 que  tiene un promedio de efectividad de 69,
+			la del centro  representa la marca n\'umero dos con un promedio de efectividad de aproximadamente 58 y por
+			\'ultimo la que esta a la derecha  es la marca 3 con un promedio de efectividad de aproximadamente 63.
+		\end{flushleft}
+		
+		\vspace*{1cm}
+		
+		\begin{flushleft}
+			Gr\'afica de la muestra usando \textit{stripchart}
+		\end{flushleft}
+		
+		\begin{figure}[H]
+			\centering
+			\includegraphics[width=0.9\textwidth]{img/ej1cp8-graficadelamuestra.png}
+			\caption{Gr\'afica de la muestra }
+			\label{fig:ejemplo}
+		\end{figure}
+		
+		\begin{flushleft}
+			Hip\'otesis
+		\end{flushleft}
+		
+		$$
+			H_0 = u_1 = u_2 = \dots = u_k = u
+		$$
+		
+		$$
+		H_1 = u_i=u_j \mbox{para alg\'un $i \neq j$}
+		$$
+		
+		Donde $u_i$ es la efectividad de la marca de spray y $u$  es la media poblacional.
+		
+		
+		\begin{flushleft}
+			El modelo ser\'ia:
+		\end{flushleft}
+		
+		$$
+		Y_{ij} = u + a_i + e_{ij}
+		$$
+		
+		Como el valor p = 0.0931 es mayor que la significaci\'on prefijada 
+		$a=0.05$, no se rechaza $H_0$ y por tanto
+		se asume que la media de la efectividad de los spray son iguales.
 \end{document}
